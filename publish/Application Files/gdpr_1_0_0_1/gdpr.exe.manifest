@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="gdpr.exe" version="1.0.0.1" publicKeyToken="3f5cd5430b2a481b" language="it" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="favicon (1).ico" asmv2:publisher="TreEsseItalia" co.v1:suiteName="treesseutility" asmv2:product="Registro trattamento dati" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="gdpr" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="gdpr.exe" parameters="" />
+  </entryPoint>
+  <co.v1:useManifestForTrust xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- Opzioni manifesto di Controllo dell'account utente
+             Per modificare il livello di Controllo dell'account utente di Windows, sostituire il 
+             nodo requestedExecutionLevel con uno dei seguenti.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Se si specifica l'elemento requestedExecutionLevel, la funzionalità Virtualizzazione file system e registro di sistema verrà disabilitata. 
+            Rimuovere questo elemento se l'applicazione richiede questa virtualizzazione per
+            compatibilità con le versioni precedenti.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="gdpr.exe" size="314888">
+      <assemblyIdentity name="gdpr" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>41sv8MPbCdmfRiG/o6AaMwkkMBq/8qrhplGXNkIRMt4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="424448">
+      <assemblyIdentity name="MySql.Data" version="6.9.11.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>kvG5FpmXqU1bCX3ngS8xBDnYHeE7VgDJ3JmG2ZTs+uk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="favicon (1).ico" size="15086">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>75lRJN2ukS9KLw44+UVDRXXSpzkCXlgVCcnz7XoNQ7E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="gdpr.exe.config" size="1582">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cwrMka3taVKocKQcR8wdV9XLE29tiO9uBNISQQt5V9w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Elenco delle versioni di Windows in cui è stata testata questa applicazione e
+           per cui è stato previsto l'uso. Rimuovere il commento dagli elementi appropriati per
+           fare in modo che Windows selezioni automaticamente l'ambiente più compatibile. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=PC-TECNICO02\g.caponera" issuerKeyHash="1f706eb5129c38bed3656cddedceca27b9ab97e3" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>7FwKg3alJxkyapbY1QAXmqspNlzdHqtCC60VWZVoThs=</DigestValue></Reference></SignedInfo><SignatureValue>QGCLYlLB433qT57eK3pWMQOJQ081v9B537Jxee+YHNndcLhSWv4eNCJCFQv72CfPM6r4q+icSZ1FcoAWPD8blMDTy/MGRL5NDGQUa/yO3i3pOd73Mal0eiXbqN07pF8dhOHL6TV/eV4hxUqfbSXoRIwvqjA2I8+ToY3BflgmtsU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>umjBqxgxQvvdhribxnDDawzAJNVtZZtam6o8SEJN5lScPFbWYwcdvd35/PPv7vK5r/ivbXdl/t9ccHTLSbSoQgoj6v9suBJ4TE4yO3IWF3MsAl0rASyf4CT0kAkxchDLAr7oxFfKnqSUZYOs5BJZ5k5rXd+r7cScHPreZMe/cHk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="1b4e68955915ad0b42ab1edd5c3629ab9a1700d5d8966a321927a576830a5cec" Description="" Url=""><as:assemblyIdentity name="gdpr.exe" version="1.0.0.1" publicKeyToken="3f5cd5430b2a481b" language="it" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=PC-TECNICO02\g.caponera</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>L6nPsY+zN1wNLcDhWEn2tBUf6ngBHAm4N2MO8aossa0=</DigestValue></Reference></SignedInfo><SignatureValue>egHo6OS8D0AVkaBI4W6e6JELWlADFQEO2kbDDLF4McKSddx5Tuofqb4pWCOSTZc1P9nlHzA27+e5vnQcutSR1/Ii1CSE8V38UHAmAu+WZfIubYZ4ydMq0Yk8yEdENytrTJRPNz7RpOL1hDu/5Aw06BRI9Kg8fgNEg6SI0A20Vfw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>umjBqxgxQvvdhribxnDDawzAJNVtZZtam6o8SEJN5lScPFbWYwcdvd35/PPv7vK5r/ivbXdl/t9ccHTLSbSoQgoj6v9suBJ4TE4yO3IWF3MsAl0rASyf4CT0kAkxchDLAr7oxFfKnqSUZYOs5BJZ5k5rXd+r7cScHPreZMe/cHk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB9TCCAV6gAwIBAgIQKW5HZH99PI9BQf/eljUJEjANBgkqhkiG9w0BAQsFADA5MTcwNQYDVQQDHi4AUABDAC0AVABFAEMATgBJAEMATwAwADIAXABnAC4AYwBhAHAAbwBuAGUAcgBhMB4XDTE4MTExNTA4Mjg1OFoXDTE5MTExNTE0Mjg1OFowOTE3MDUGA1UEAx4uAFAAQwAtAFQARQBDAE4ASQBDAE8AMAAyAFwAZwAuAGMAYQBwAG8AbgBlAHIAYTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAumjBqxgxQvvdhribxnDDawzAJNVtZZtam6o8SEJN5lScPFbWYwcdvd35/PPv7vK5r/ivbXdl/t9ccHTLSbSoQgoj6v9suBJ4TE4yO3IWF3MsAl0rASyf4CT0kAkxchDLAr7oxFfKnqSUZYOs5BJZ5k5rXd+r7cScHPreZMe/cHkCAwEAATANBgkqhkiG9w0BAQsFAAOBgQCSzdHob+D2An4O3/7WxP5TMQMZN6DtO2mA+UUvVPh73GN8LwmSTl+Sh0Ff19fo+ApAj8ZPjIaoZauZfNrRRrW+VW0BpGUp4XmXkMQA7TBLsrqW3RgovWEyELefYePmH/d8P+UDTASKHHX0hRpqGmSXQUnHz4Uqvng73rO+tTSTRQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
